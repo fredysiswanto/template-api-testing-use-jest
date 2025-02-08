@@ -1,0 +1,63 @@
+{
+  "login": {},
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "password1",
+      "email": "user1@example.com",
+      "fullName": "User One"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "password2",
+      "email": "user2@example.com",
+      "fullName": "User Two"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": 100,
+      "description": "This is product 1"
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "price": 200,
+      "description": "This is product 2"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 2
+        },
+        {
+          "productId": 2,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 400,
+      "status": "pending"
+    }
+  ],
+  "carts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
