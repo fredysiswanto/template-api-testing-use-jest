@@ -1,5 +1,5 @@
 const request = require('supertest');
-const { BASE_URL, HEADERS } = require('../../utils/config');
+const { BASE_URL, HEADERS } = require('@utils/config');
 
 async function login(email, password) {
   const response = await request(BASE_URL)
