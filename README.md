@@ -10,6 +10,10 @@
 ## About the Project
 
 Template Api Testing use Jest
+[Doc Jest](https://jestjs.io/docs/)
+[Doc Jest Extend](https://jest-extended.jestcommunity.dev/docs/matchers/)
+[Doc Supertest](https://github.com/ladjs/supertest#readme)
+[Fake Store API](https://jest-extended.jestcommunity.dev/docs/matchers/)
 
 <!-- GETTING STARTED -->
 
