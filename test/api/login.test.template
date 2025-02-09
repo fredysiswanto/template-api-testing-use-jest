@@ -1,10 +1,11 @@
-const { login } = require('../../src/api/auth.js');
+const { login } = require('@srcApi/auth.js');
 
 describe('Auth', () => {
   test('Successful Login', async () => {
-    const response = await login('eve.holt@reqres.in', 'cityslicka');
-    expect(response.body.token).toBe('QpwL5tke4Pnpja7X4');
+    const response = await login('mor_2314', '83r5^_');
+    expect(response.body.token).toBe('eyJhbGciOiJIUzI1NiIsInR');
     expect(response.status).toBe(200);
+    console.log(response);
   });
   test('Unsucces Login', async () => {
     const response = await login('eve.holt@reqres.in', '');

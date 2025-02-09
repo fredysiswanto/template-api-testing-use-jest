@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@root": ["."],
+      "@config": ["config"],
+      "@testApi": ["test/api/"],
+      "@srcApi": ["src/api/"],
+      "@dataTest": ["data-test"]
+    }
+  }
+}

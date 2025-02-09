@@ -1,6 +1,6 @@
 const request = require('supertest');
-let { BASE_URL } = require('../../utils/config');
-const { prepareRequest, handleResponse } = require('../../utils/helper');
+let { BASE_URL } = require('@utils/config');
+const { prepareRequest, handleResponse } = require('@utils/helper');
 const url = '/users';
 
 async function users({

@@ -1,6 +1,6 @@
-const testData = require('../../data-test/testData.json');
-const { login } = require('../../src/api/auth.js');
-const { users, listUser } = require('../../src/api/users.js');
+const testData = require('@dataTest/testData.json');
+const { login } = require('@srcApi/auth.js');
+const { users, listUser } = require('@srcApi/users.js');
 
 describe('Create', () => {
   let authToken = '';
