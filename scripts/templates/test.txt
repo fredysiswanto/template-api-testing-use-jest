@@ -1,0 +1,22 @@
+const testData = require('@dataTest/testData.json');
+const { getTokenLogin } = require('@srcApi/auth.js');
+const { __VAR0__s, add__VAR1__, update__VAR1__, delete__VAR1__  } = require('@srcApi/__VAR2__.js');
+
+describe('Test url api /__VAR0__', () => {
+  let authToken = '';
+  beforeAll(async () => {
+    const res = await getTokenLogin();
+    authToken = res
+  });
+  test('sample testing', async () => {
+    const response = await __VAR0__s({
+      reqHeader: { token: authToken },
+      reqBody: {},
+      params:'',
+      debug:false
+    });
+    const {body} = response.body;
+    expect(response.status).toBe(200);
+    expect(body.xxx).toBe('xxx');
+  });
+})

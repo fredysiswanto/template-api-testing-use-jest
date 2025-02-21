@@ -1,5 +1,5 @@
 const request = require('supertest');
-const { login } = require('@srcApi/ecommerce/auth');
+const { login } = require('@srcApi/store/auth');
 
 describe('Auth', () => {
   test('basic jest', async () => {

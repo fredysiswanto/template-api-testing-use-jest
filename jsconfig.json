@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES6",
     "baseUrl": "./",
     "paths": {
-      "@root": ["."],
+      "@root": ["./"],
       "@config": ["config"],
       "@testApi": ["test/api/"],
       "@srcApi": ["src/api/"],
