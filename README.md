@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/fredysiswanto/">
-    <img src="https://fredysiswanto.github.io/projects/assets/images/logo_white.svg" alt="Logo" width="auto" height="20">
+    <img src="https://fredysiswanto.github.io/projects/assets/images/logo_white.svg" alt="Logo" width="200" height="auto">
   </a>
 </p>
   <h3 align="center">Testing Api Jest + Supertest</h3>
