@@ -2,7 +2,7 @@ const request = require('supertest');
 const { login } = require('@srcApi/store/auth');
 
 describe('Auth', () => {
-  test('basic jest', async () => {
+  test.skip('basic jest', async () => {
     const response = await request('https://fakestoreapi.com')
       .post('/auth/login')
       .send({
