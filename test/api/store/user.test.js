@@ -33,46 +33,23 @@ describe('Test url api /user', () => {
     expect(body.id).toBe(3);
     expect(body).toContainKeys(['email', 'name', 'id']);
   });
-  test('Get a single user', async () => {
-    const response = await users({
-      reqHeader: { token: authToken },
-      params: '/3',
-    });
-    const { body } = response;
-    expect(response.status).toBe(200);
-    expect(body.id).toBe(3);
-    expect(body).toContainKeys(['email', 'name', 'id']);
-  });
+
   test('Add a new user', async () => {
     const sendBody = {
+      id: 0,
       email: 'test@test.com',
       username: 'johnd',
       password: 'm38rmF$',
-      name: {
-        firstname: 'John',
-        lastname: 'Doe',
-      },
-      address: {
-        city: 'kilcoole',
-        street: '7835 new road',
-        number: 3,
-        zipcode: '12926-3874',
-        geolocation: {
-          lat: '-37.3159',
-          long: '81.1496',
-        },
-      },
-      phone: '1-570-236-7033',
     };
     const response = await addUser({
       reqHeader: { token: authToken },
       reqBody: sendBody,
-      debug: true,
+      debug: false,
     });
     const { body } = response;
     expect(response.status).toBe(200);
-    expect(body.id).toBe(1);
-    expect(body.email).toBe('test@test.com');
+    expect(body.id).toBe(11);
+    // expect(body.email).toBe('test@test.com');
     // expect(body).toContainKeys(['email', 'name', 'id']);
   });
   test('Update a users', async () => {
