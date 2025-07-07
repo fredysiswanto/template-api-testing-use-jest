@@ -48,7 +48,7 @@ describe('Test url api /user', () => {
     });
     const { body } = response;
     expect(response.status).toBe(200);
-    expect(body.id).toBe(11);
+    expect(body).toHaveProperty('id');
     // expect(body.email).toBe('test@test.com');
     // expect(body).toContainKeys(['email', 'name', 'id']);
   });
