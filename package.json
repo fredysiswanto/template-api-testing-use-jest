@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "Fredy Siswanto <tester.fredy@gmail.com> (https://fredysiswanto.my.id)",
   "dependencies": {
+    "fs-extra": "^11.3.0",
     "jest": "^29.7.0",
     "json-server": "^1.0.0-beta.3",
     "module-alias": "^2.2.3",

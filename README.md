@@ -1,3 +1,4 @@
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -5,41 +6,101 @@
     <img src="https://fredysiswanto.github.io/projects/assets/images/logo_white.svg" alt="Logo" width="200" height="auto">
   </a>
 </p>
-  <h3 align="center">Testing Api Jest + Supertest</h3>
+
+<h3 align="center">Testing API with Jest + Supertest</h3>
+
+<p align="center">
+   A simple and extensible template for API testing using <strong>Jest</strong> and <strong>Supertest</strong>. <br/>
+  Ideal for quick setup and custom automation scripting.
+</p>
+
+---
 
 ## About the Project
 
-Template Api Testing use Jest
-[Doc Jest](https://jestjs.io/docs/)
-[Doc Jest Extend](https://jest-extended.jestcommunity.dev/docs/matchers/)
-[Doc Supertest](https://github.com/ladjs/supertest#readme)
-[Fake Store API](https://fakestoreapi.com/)
+This repository provides a ready-to-use template for testing RESTful APIs using:
 
-<!-- GETTING STARTED -->
+- [Jest](https://jestjs.io/docs/)
+- [Jest Extended](https://jest-extended.jestcommunity.dev/docs/matchers/)
+- [Supertest](https://github.com/ladjs/supertest#readme)
+- [Fake Store API](https://fakestoreapi.com/) for sample data
 
-## Directory
+## Directory Structure
 
-![alt Directory project](image.png)
+![Directory Structure](image.png)
 
 ## Usage
 
-- menjalankan testing
+### Run all tests
 
-  ```sh
-  npm run test
-  ```
+```bash
+pnpm run test
+```
 
-- generated starter code testing
+### Generate starter testing files
 
-  ```sh
-  node scripts/cli <nama-file> --test  --api
-  ```
+```bash
+node scripts/cli <file-name or api-name> --test --api
+```
 
-  --test for generated sample testing
-  --api for generated sample testing
+- `--test`: Generate a sample testing file (placed under `test/`)
+- `--api`: Generate an API helper function file (placed under `src/api/`)
 
-## How Create your testing Api
+Example:
 
-[see Demo video on youtube](https://www.youtube.com/playlist?list=PLm2QKf1dhlBAZ2MUieV2sAV5-Vdvl-ICh)
+```bash
+node scripts/cli product --test --api
+```
 
-    <!-- ROADMAP -->
+Will create:
+
+- `test/product.test.js`
+- `src/api/product.js`
+
+Example Test Report:
+
+![Sample Report](sample_report.png)
+
+## How to Write Your API Tests
+
+Check out this [YouTube Demo Playlist](https://www.youtube.com/playlist?list=PLm2QKf1dhlBAZ2MUieV2sAV5-Vdvl-ICh)
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have **Node.js** and **npm** installed:
+
+```bash
+node -v
+pnpm -v
+```
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/fredysiswanto/template-api-testing-use-jest.git
+cd template-api-testing-use-jest
+```
+
+### Install Dependencies
+
+```bash
+pnpm install
+```
+
+You're ready to start writing tests!
+
+---
+
+## License
+
+Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information.
+
+---
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests to improve the template.
